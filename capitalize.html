@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div class="container">
+        <h1>Capitalize</h1>
+<input type="text" placeholder="Enter any Sentances" id="input">
+<button id="btn">Capitalize</button>
+<button id="reverseBtn">Reverse</button>
+    </div>
+    <div id="output">
+
+    </div>
+    <script>
+    let input = document.getElementById('input');
+    let btn = document.getElementById('btn');
+    let output = document.getElementById('output');
+    let reverseBtn = document.getElementById('reverseBtn');
+
+    btn.addEventListener('click',()=>{
+        let inputValue = input.value;
+        let res = capitalize(inputValue);
+        output.innerHTML = <h2>${res}</h2>;
+    });
+
+     reverseBtn.addEventListener("click",()=>{
+        let inputValue = input.value;
+       let res = reverse(inputvalue);
+       output.innerHTML = <h2>${res}</h2>;
+     });
+
+
+//      function capitalize(str) {
+//   let words = str.split(' ');
+//   for (let i = 0; i < words.length; i++) {
+//     words[i] = words[i][0].toUpperCase() + words[i].slice(1); 
+//   }
+//   return words.join(' '); 
+// }
+
+// const user = "this is javascript";
+// console.log(capitalize(user));
+
+     let s='';
+    for(let i = 0; i < str.length; i++){
+        if(i == 0 || str[i - 1] == ' '){
+            s=s+str[i].toUpperCase();
+        }
+        else{
+            s=s+str[i];
+        }
+    }
+   return s;
+ 
+    function reverse(str){
+        str.split()
+    }
+
+let res = capitalize(st);
+console.log(res);
+</script>
+</body>
+</html>
+
+
+<!-- git init
+git add README.md
+git commit -m "first commit"
+git branch -M main
+git remote add origin https://github.com/Shikhabaghel23/Project.git
+git push -u origin main -->
